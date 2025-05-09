@@ -14,8 +14,8 @@
             <h1>Cycling in Ireland</h1>
         </div>
     </div>
-    <div class="Menu" style="background-color:greenyellow;"> 
-        <nav>
+    <div class="Menu"> 
+        <nav class="center">
             <a href="index.html">Home</a>
             <a href="Cargo.html">Cargo</a>
             <a href="fixie.html">Fixie</a> 
@@ -30,19 +30,22 @@
     <div class="Leftside" style="background-color: magenta;">
       <section class="newsletter">
         <h2>Subscribe to our newsletter and stay tunned for more social rides</h2>
-        <form action="/subscribe" method="POST">
+
+        <form action="/subscribe" method="POST"> 
           <label for="name">Name:</label>
+          
           <input type="text" id="name" name="name" required />
-    
+          <br>
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" required />
-    
+          <br>
           <label for="city">City:</label>
           <input type="text" id="city" name="city" />
-    
+          
+          <br>
           <label for="message">Message (optional):</label>
+          <br>
           <textarea id="message" name="message" rows="4"></textarea>
-    
           <button type="submit">Subscribe</button>
         </form>
       </section>
@@ -52,20 +55,23 @@
       <p style="color: white; font-size: 18px; margin-bottom: 10px;">
         Looking for new people to ride with? Join some local groups
       </p>
-        <div id="rcorners2" class="center">
+        <div class="corner-cut-box center">
           <ul>
             <li>GOT (Go on Tuesday) - Social bike meetup. All bikes welcome: <a href="https://www.strava.com/clubs/1109354" target="_blank">Strava Club</a></li>
+            <br>
             <li>TU Dublin cycling group: Social and competitive cycling: <a href="https://chat.whatsapp.com/LSxtLcVh9dMIqfmROgkzx0" target="_blank">WhatsApp Group</a></li>
         </ul>
         </div>
     </div>
     <div class="Body2" style="background-color: yellow;">
-      <p style="color: white; font-size: 18px; margin-bottom: 10px;">
+      <p style="color: white; font-size: 18px; margin-bottom: 10px;" class="center">
         Are you a competitive cyclist? Ireland is full of races!
-      </p>
-      <div id="rcorners2" class="center">
+      </p> 
+      <div class="corner-cut-box center">
         <ul>
-          <li>Lakelander - Ireland’s premier gravel cycling challenge<br> <a href="https://lakelander.co.uk/" target="_blank">Lakelander website</a></li>
+          <li>Lakelander - Ireland's premier gravel cycling challenge<br> <a href="https://lakelander.co.uk/" target="_blank">Lakelander website</a></li>
+          <br>
+          <br>
           <li>Wicklow 200 - Ireland's premier road cycling challenge <a href="https://wicklow200.ie/" target="_blank">Wicklow200 website</a></li>
       </ul>
       </div>
@@ -73,15 +79,15 @@
   
     
     <div class="Body3">
-      <section class="newsletter">
+      <section>
         <h2>Subscribe to our newsletter and stay tunned for more social rides</h2>
         <form action="/subscribe" method="POST">
-          <label for="name">Name:</label>
+          <label for="name">Name:</label> 
           <input type="text" id="name" name="name" required />
-    
+          <br>
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" required />
-    
+          <br>
           <label for="city">City:</label>
           <input type="text" id="city" name="city" />
     

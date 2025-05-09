@@ -18,15 +18,20 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 0.5fr) repeat(2, 1.5fr) 0.5fr; 
+  grid-template-rows: repeat(2, 0.5fr) repeat(3, 1.5fr) 0.5fr; 
   gap: 0px;
-  height: 100%; 
+  height: 100%;
 }
 
 .Footer {
-  grid-area: 5 / 1 / 6 / 2;
+  grid-area: 6 / 1 / 7 / 2;
   background: blueviolet;
   color: white;
+  padding: 10px;
+}
+.Body3 {
+  grid-area: 5 / 1 / 6 / 2;
+  background: pink;
   padding: 10px;
 }
 
@@ -34,12 +39,15 @@ body {
   grid-area: 4 / 1 / 5 / 2;
   background: yellow;
   padding: 10px;
+  place-items: center;
+  display: grid;
 }
 
 .Body1 {
   grid-area: 3 / 1 / 4 / 2;
   background: red;
   padding: 10px;
+  place-items: center;
 }
 
 .Menu {
@@ -62,22 +70,29 @@ body {
   display: none;
 }
 
-#rcorners2 {
-  border-radius: 25px;
-  border: 2px solid #73AD21;
-  padding: 20px;
-  max-width: 90%;
-  margin: auto;
-  box-sizing: border-box;
-}
 .center {
   text-align: center;
+  align-items: center;
 }
+
+.corner-cut-box {
+  width: 280px;
+  height: 300px;
+  background-color: #e63946; 
+  clip-path: polygon(20px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 20px);
+  color: white;
+  padding: 1rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (min-width: 1112px) {
   .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 0.5fr) repeat(2, 1.5fr) 0.5fr;
+    grid-template-rows: repeat(2, 0.5fr) repeat(3, 1.5fr) 0.5fr; 
     gap: 0px;
     grid-auto-flow: row;
     width: 834px;
@@ -93,19 +108,34 @@ body {
   }
 
   .Footer {
+    grid-area: 6 / 1 / 7 / 3;
+  }
+
+  .Body3 {
     grid-area: 5 / 1 / 6 / 3;
+    background: orange;
+    padding: 10px;
   }
 
   .Body2 {
     grid-area: 4 / 1 / 5 / 3;
+    place-items: center;
+    display: grid;
   }
 
   .Body1 {
     grid-area: 3 / 1 / 4 / 3;
+    place-items: center;
+    display: grid;
   }
 
   .Leftside, .Rightside {
     display: none;
+  }
+
+  .corner-cut-box {
+    width: 400px;
+    height: 300px;
   }
 }
 @media (min-width: 1280px) {
@@ -133,10 +163,14 @@ body {
   }
   .Body1 {
     grid-area: 3 / 2 / 4 / 3;
+    place-items: center;
+    display: grid;
   }
 
   .Body2 {
     grid-area: 4 / 2 / 5 / 3;
+    place-items: center;
+    display: grid;
   }
 
   .Rightside {
@@ -146,8 +180,13 @@ body {
   .Footer {
     grid-area: 5 / 1 / 6 / 4;
   }
-}
+  .corner-cut-box {
+    width: 400px;
+    height: 300px;
 
+  }
+
+}
 .footer-logos {
   text-align: center;
 }
@@ -169,3 +208,39 @@ body {
   height: 40px;
   width: auto;
 }
+
+
+.Menu {  grid-column: 1 / -1;  
+  background-color: #fff;  
+  padding: 1rem 2rem;  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Menu ul {  list-style: none;  
+  display: flex;  
+  justify-content: center;  
+  gap: 2rem;  
+  margin: 0;  
+  padding: 0;
+}
+.Menu a {  text-decoration: none;  
+  color: #333;  
+  font-weight: 500;  
+  font-size: 1.3rem;
+  position: relative;  
+  padding: 0.5rem;  
+  transition: color 0.3s ease;}
+.Menu a::after {  content: '';  
+  position: absolute;  
+  bottom: 0;  
+  left: 0;  
+  height: 2px; 
+  width: 0%;  
+  background-color: #0077ff;  
+  transition: width 0.3s ease;
+}
+.Menu a:hover {  color: #0077ff;}
+
+.Menu a:hover::after {  width: 100%;}
+
+li{list-style: none;}
