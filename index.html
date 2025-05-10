@@ -5,8 +5,8 @@
 </head>
 <body>
 
-<div class="container">
-    <div class="Header" style="background-color: blue;">
+<div class="container" style="background-color: aliceblue;">
+    <div class="Header" >
         <div class="logo">
             <img src="bikelogo.png" alt="image of a bicycle" height="50" width="50">
         </div>
@@ -35,9 +35,8 @@
       <section class="newsletter">
         <h2>Subscribe to our newsletter and stay tunned for more social rides</h2>
 
-        <form action="/subscribe" method="POST"> 
-          <label for="name">Name:</label>
-          
+        <form action="#" onsubmit="return validateEmail()" method="POST">
+          <label for="name">Name:</label> 
           <input type="text" id="name" name="name" required />
           <br>
           <label for="email">Email:</label>
@@ -45,11 +44,10 @@
           <br>
           <label for="city">City:</label>
           <input type="text" id="city" name="city" />
-          
-          <br>
+    
           <label for="message">Message (optional):</label>
-          <br>
           <textarea id="message" name="message" rows="4"></textarea>
+    
           <button type="submit">Subscribe</button>
         </form>
       </section>
@@ -85,7 +83,7 @@
     <div class="Body3">
       <section>
         <h2>Subscribe to our newsletter and stay tunned for more social rides</h2>
-        <form action="/subscribe" method="POST">
+        <form action="#" onsubmit="return validateEmail()" method="POST">
           <label for="name">Name:</label> 
           <input type="text" id="name" name="name" required />
           <br>
@@ -94,7 +92,7 @@
           <br>
           <label for="city">City:</label>
           <input type="text" id="city" name="city" />
-    
+          <br>
           <label for="message">Message (optional):</label>
           <textarea id="message" name="message" rows="4"></textarea>
     
@@ -103,6 +101,15 @@
       </section>
 
     </div>
+    
+    <div class="Body4">
+      <iframe width="280" height="315" src="https://www.youtube.com/embed/CuhrtUJ6LtY?si=E_xYLw8FfA4XpSna" title="YouTube video player" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+
+    </div>
+  
 
     <footer class="Footer">
         <nav class="footer-logos">
