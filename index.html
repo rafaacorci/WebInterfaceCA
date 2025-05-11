@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body onload="greetings()">
 
 <div class="container">
     <div class="Header" >
@@ -25,6 +25,16 @@
     </div>
 
     <div class="Rightside">
+      <br>
+      <br>
+      <br>
+      <p style="font-size: 18px; margin-bottom: 10px;" class="center">
+        Watch this short documentary about a woman who had recently moved from Bangkok to San Francisco and was feeling alienated at her new city.
+        But everything changed after she got her hands on a bike that was restored from a dumpster and allowed her to explore and feel more connnected
+        with the city.
+      </p>
+      <br>
+      <br>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/CuhrtUJ6LtY?si=E_xYLw8FfA4XpSna" title="YouTube video player" 
       frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
@@ -66,7 +76,7 @@
         </div>
     </div>
     <div class="Body2">
-      <p style="color: white; font-size: 18px; margin-bottom: 10px;" class="center">
+      <p style="font-size: 18px; margin-bottom: 10px;" class="center">
         Are you a competitive cyclist? Ireland is full of races!
       </p> 
       <div class="corner-cut-box center">
@@ -103,6 +113,12 @@
     </div>
     
     <div class="Body4">
+      <p style="font-size: 18px; margin-bottom: 10px;" class="center">
+        Watch this short documentary about a woman who had recently moved from Bangkok to San Francisco and was feeling alienated at her new city.
+        But everything changed after she got her hands on a bike that was restored from a dumpster and allowed her to explore and feel more connnected
+        with the city.
+      </p>
+
       <iframe width="280" height="315" src="https://www.youtube.com/embed/CuhrtUJ6LtY?si=E_xYLw8FfA4XpSna" title="YouTube video player" 
       frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
@@ -136,6 +152,18 @@
 </div>
 
 </body>
+
+<script>
+  function greetings(){
+    name = prompt("Welcome to cycling in Ireland! What is your name?")
+
+    popup = alert("Hi, "+name+", welcome to Cycling in Ireland! I hope that you find the content of my website helpful to quickstart your cycling journey!")
+
+
+  }
+
+
+</script>
 
 
 </html>
